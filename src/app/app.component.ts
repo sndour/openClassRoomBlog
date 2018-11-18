@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'openClassRoomBlog';
+
+  post: {
+    title: string,
+    content: string,
+    loveIts: number,
+    created_at: Date
+  };
 }
