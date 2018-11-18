@@ -1,0 +1,29 @@
+<li >
+
+  <div class="container" [ngClass]="{'list-group-item':true,
+               'list-group-item-success': loveIts > 0,
+               'list-group-item-danger' : loveIts < 0}">
+    <p style="position: absolute; right:0px; top:0px;"> {{created_at | date: 'M/d/yy, h:mm a' | uppercase}}</p>
+    <div class="row">
+      <div class="col">
+        <h1>{{title}}</h1>
+      </div>
+      <div class="col">
+        <!--//revoir les pipes-->
+      </div>
+    </div>
+    <div class="row">
+      {{content}}
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-success" (click)="onLoveIt()">Love it</button>
+      <!--</div>
+      <div class="col">-->
+        <button class="btn btn-danger" (click)="onHateIt()">Don't love it</button>
+      </div>
+
+    </div>
+  </div>
+
+</li>
