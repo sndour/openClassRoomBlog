@@ -17,10 +17,14 @@
     </div>
     <div class="row">
       <div class="col">
-        <button class="btn btn-success" (click)="onLoveIt()">Love it</button>
-      <!--</div>
-      <div class="col">-->
+        <button class="btn btn-success "  (click)="onLoveIt()">Love it</button>
         <button class="btn btn-danger" (click)="onHateIt()">Don't love it</button>
+      </div>
+      <!--<div class="col" >
+        <button class="btn btn-danger" (click)="onHateIt()">Don't love it</button>
+      </div>-->
+      <div class="col" style="position: absolute ; right: 0px; bottom: 10px;">
+        <button class="btn btn-danger btn-danger" (click)="onSupress()">Supprimer</button>
       </div>
 
     </div>
